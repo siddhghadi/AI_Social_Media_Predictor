@@ -1,0 +1,10 @@
+streamlit
+joblib
+numpy
+pillow
+transformers
+torch
+scikit-learn
+opencv-python
+librosa
+requests
