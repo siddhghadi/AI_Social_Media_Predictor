@@ -51,10 +51,9 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image')
     if st.button('Predict'):
-    temp_path = 'temp_image.jpg'
-    image.save(temp_path)
-    pred = predict_performance(caption, hashtags, temp_path)
-    st.write(f'Predicted Performance: {pred}')
-        if os.path.exists(temp_path):  # Check if file exists before removing
+        temp_path = 'temp_image.jpg'
+        image.save(temp_path)
+        pred = predict_performance(caption, hashtags, temp_path)
+        st.write(f'Predicted Performance: {pred}')
+        if os.path.exists(temp_path):
             os.remove(temp_path)  # Clean up
-
