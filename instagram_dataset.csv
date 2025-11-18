@@ -1,4 +1,4 @@
-id,image,caption,hashtags,likes
+id,image_path,caption,hashtags,likes
 1,image_1.jpg,Small moments matter.,#goodday #motivation #lifestyle,4442
 2,image_2.jpg,Adventure awaits.,#travelgram #vacation #wanderlust,3551
 3,image_3.jpg,Latest product drop!,#reviews #brand #onlineshop,1700
