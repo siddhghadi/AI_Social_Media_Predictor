@@ -55,5 +55,6 @@ if uploaded_file:
     image.save(temp_path)
     pred = predict_performance(caption, hashtags, temp_path)
     st.write(f'Predicted Performance: {pred}')
-    if os.path.exists(temp_path):  # Check if file exists before removing
-        os.remove(temp_path)  # Clean up
+        if os.path.exists(temp_path):  # Check if file exists before removing
+            os.remove(temp_path)  # Clean up
+
