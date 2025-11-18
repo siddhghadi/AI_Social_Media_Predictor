@@ -50,9 +50,8 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image')
     if st.button('Predict'):
-        # Save temp file for processing
-        temp_path = 'temp_image.jpg'
-        image.save(temp_path)
-        pred = predict_performance(caption, hashtags, temp_path)
-        st.write(f'Predicted Performance: {pred}')
-        os.remove(temp_path)  # Clean up
+    temp_path = 'temp_image.jpg'
+    image.save(temp_path)
+    pred = predict_performance(caption, hashtags, temp_path)
+    st.write(f'Predicted Performance: {pred}')
+    os.remove(temp_path)  # Clean up
